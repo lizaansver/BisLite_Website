@@ -1,0 +1,278 @@
+@media (max-width: 960px) {
+  .header__menu-btn {
+    display: block;
+  }
+
+  .header__menu>ul {
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+    border-bottom: 5px solid #2aacc8;
+  }
+
+  .header__menu li {
+    display: block;
+    text-align: center;
+  }
+
+  .header__menu li+li,
+  .header__drop-down.drop-down,
+  .header__drop-down.drop-down+.header__drop-down.drop-down,
+  .header__drop-down.drop-down+.header__linkBlog {
+    margin-left: 0;
+  }
+
+  /* .header__menu a{
+      width: 100%;
+    } */
+
+  .header__menu a {
+    padding: 12px 0 12px 11px;
+    display: block;
+  }
+
+  .header__menu li+li a {
+    border-top: 1px solid #e7e7e7;
+  }
+
+  .header__drop-down.drop-down:hover .drop-down__list {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: none;
+  }
+
+  .header__drop-down.drop-down .drop-down__list {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all .3s;
+    width: 100%;
+    position: static;
+    border-bottom: none;
+    padding: 0;
+  }
+
+  .header__drop-down.drop-down .drop-down__list.active {
+    height: auto;
+    overflow: visible;
+    opacity: 1;
+    transition: all .3s;
+  }
+
+  .header__drop-down.drop-down:hover>a {
+    transition: all 0s;
+    border-top: 1px solid #e7e7e7;
+  }
+
+  .header__drop-down>a.active::after {
+    transform: rotate(180deg);
+  }
+
+  .items__inner {
+    flex-wrap: wrap;
+  }
+
+  .items {
+    padding: 60px 0 20px;
+  }
+
+  .item {
+    width: 50%;
+    margin-bottom: 30px;
+    padding: 0px 15px;
+  }
+
+  .clients-logos,
+  .download__btn {
+    padding-left: 20px;
+  }
+
+  .download__btn a::before {
+    top: 25px;
+  }
+
+  /* .footer__info{
+    flex-wrap: wrap; */
+}
+
+
+@media (max-width: 920px) {
+  .slider__item-text {
+    margin-left: 30px;
+    padding-top: 110px;
+  }
+
+}
+
+@media (max-width: 900px) {
+  .footer__info {
+    flex-wrap: wrap;
+  }
+
+  .connect {
+    width: 60%;
+    text-align: center;
+    margin: 30px auto 0;
+  }
+
+  .footer__copy {
+    max-width: 60%;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .clients__inner {
+    flex-wrap: wrap;
+  }
+
+  .testimonials {
+    max-width: 100%;
+  }
+
+  .clients-logos {
+    padding-left: 0;
+    margin: 0 auto;
+  }
+}
+
+
+
+@media (max-width: 760px) {
+  .slider__item-text {
+    font-size: 45px;
+    line-height: 45px;
+    margin-left: 20px;
+    padding-top: 120px;
+  }
+}
+
+@media (max-width: 720px) {
+  .footer__item-content {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .aboutas{
+    text-align: center;
+  }
+  .footer__inner {
+    padding: 0 5px;
+}
+}
+
+
+
+@media (max-width: 680px) {
+  .download__btn {
+    margin: auto 0px;
+  }
+
+  .clients-logos__images img {
+    max-width: 100%;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  .slider__item-text {
+    margin-left: 7px;
+  }
+}
+
+
+@media (max-width: 570px) {
+  .item {
+    width: 100%;
+  }
+
+  .item__text,
+  .item__link {
+    font-size: 15px;
+  }
+
+  .download {
+    flex-wrap: wrap;
+  }
+
+  .download__btn {
+    padding-left: 0;
+    margin: 30px auto 0;
+  }
+
+  .download__btn a::before {
+    top: 16px;
+  }
+
+  .connect {
+    width: 100%;
+  }
+
+  .footer__copy {
+    padding-right: 10px;
+  }
+
+  .slider__item-text {
+    font-size: 35px;
+    padding-top: 281px;
+    width: auto;
+    text-align: center;
+    margin-left: 0px;
+    }
+}
+
+@media (max-width: 450px) {
+  .contact {
+    width: auto;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .footer__info {
+    justify-content: space-around;
+  }
+
+  .footer__copy {
+    max-width: 50%;
+  }
+
+  .footer__logo {
+    margin: auto 0px;
+  }
+
+  .footer__adress {
+    margin-bottom: 0;
+  }
+
+}
+
+
+@media (max-width: 380px) {
+  .footer__cocials li {
+    width: 33.3%;
+    padding-top: 7px;
+  }
+
+  .footer__copy {
+    max-width: 40%;
+  }
+
+}
+
+@media (max-width: 342px) {
+  .download__btn a::before {
+    top: 24px;
+}
+}
+
+@media (min-width: 960px) {
+  .header__menu>ul {
+    display: block !important;
+  }
+}
